@@ -649,6 +649,17 @@ input{
        height: 50px;
         
     }
+    .personal-info{
+        margin: .75rem;
+       
+        border-radius: 0.75rem;
+        width: 90%;
+        height: 100%;
+        /* border: 1px solid green; */
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
     form{
         
         margin-top: -10%;

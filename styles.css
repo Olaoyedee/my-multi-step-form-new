@@ -1,0 +1,830 @@
+/* ---------------------------BASE--------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ 
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(229, 24%, 87%);
+}
+
+.main{
+    width: 70%;
+    height: 80vh;
+    overflow-x: hidden;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color:  hsl(0, 0%, 100%);
+   
+}
+.side_nav{
+    margin: .75rem;
+    border-radius: 0.75rem;
+   width: 25%;
+   height: 95%;
+   border: 1px solid green;
+   background-image: url("./images/bg-sidebar-desktop.svg");
+   background-size: cover;
+   font-family: 'Ubuntu', sans-serif;
+}
+.line{
+  margin-left: 2rem;
+    width: 80%;
+    height: 12vh;
+    /* border: 1px solid purple; */
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+   /* text-indent: 1.5em; */
+   color: #fff;
+
+}
+.round-box{
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    justify-content: space-;
+   border: 1px solid #fff;
+    
+ 
+}
+.active{
+    background-color: hsl(206, 94%, 87%);
+}
+    
+.line_contents{
+    width: 75%;
+    text-align: justify;
+    padding-left: 10%;
+}
+.line_contents p{
+    color: hsl(231, 11%, 63%);
+}
+    
+    
+.personal-info{
+    margin: .75rem;
+   
+    border-radius: 0.75rem;
+    width: 70%;
+    height: 95%;
+    /* border: 1px solid green; */
+    display: grid;
+    place-items: center;
+}
+form{
+    margin-top: 3.5rem;
+    width: 70%;
+    /* border: 1px solid black; */
+    height: 90%;
+}
+form h1{
+    /* margin-top: 1.5rem; */
+    word-spacing: 5px;
+    left: 2.5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: hsl(213, 96%, 18%);
+}
+form p{
+    margin-top: .75rem;
+    margin-bottom: 1.5rem;
+    word-spacing: 5px;
+    left: 2.5px;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(231, 11%, 63%);
+}
+label{
+    color:  hsl(213, 96%, 18%);
+    letter-spacing: 1.5px;
+    font-size: 1.15rem;
+    
+}
+input{
+    margin-bottom: 2rem;
+    width: 90%;
+    height: 10%;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 11%, 63%);
+    padding: 3%;
+}
+::placeholder{
+    color: hsl(231, 11%, 63%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.button{
+    width: 100%;
+    height: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+.gotoPage2{
+    margin-top: 5%;
+    float: right;
+   
+    height: 100%;
+    width: 20%;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.form-step1{
+    display: block;
+}
+.form-step2{
+  
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+.step-card{
+    width: 100%;
+    height: 60%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.cardflex{
+    width: 100%;
+    height: 70%;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.toggle{
+  
+    width: 100%;
+    height: 20%;
+    
+    background-color: hsl(229, 24%, 87%);
+    /* display: grid;
+    place-items: center; */
+
+}
+.inner{
+    height: 100%;
+    width: 100%;
+  
+    list-style-type: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   
+   
+    
+} 
+
+.toggle-action{
+ 
+    height: 70%;
+    width: 15%;
+    border-radius: 10px;
+    /* background-color: blue; */
+    /* border: 1px solid ghostwhite; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+ 
+/* .circle1, .circle2{
+    margin: 1px .75px 0 .75px;
+    padding: 1px;
+    height: 90%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 4ms;
+}
+.circle2{
+    position: absolute;
+    left: 0;
+    display: none;
+} */
+.cards{
+    height: 100%;
+    width: 32%;
+    border: 1px solid  hsl(231, 11%, 63%);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    
+}
+.cards:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+    background-color: hsl(229, 24%, 87%);
+}
+.card-select{
+    border: 1px solid hsl(243, 100%, 62%);
+    background-color: hsl(229, 24%, 87%);
+}
+.card-wrap{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+   
+}
+.card-logo{
+    height: 25%;
+    width: 30%;
+    border-radius: 50%;
+   
+}
+.card-info{
+    height: 40%;
+    width: 100%;
+    line-height: 5px;
+    
+}
+.card-info h4{
+    margin-bottom: 0.5rem;
+    color: hsl(213, 96%, 18%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+   
+}
+.card-info p{
+    margin-bottom: 0.2rem;
+    word-spacing: 1px;
+   
+}
+
+.dollarperyear,.dollarperyear1,.dollarperyear2{
+    display: none;
+}
+#logo1{
+    background-image: url("./images/icon-arcade.svg");
+    background-size: cover;
+}
+#logo2{
+     background-size: cover;
+     background-image: url("./images/icon-advanced.svg");
+}
+#logo3{
+     background-size: cover;
+     background-image: url("./images/icon-pro.svg");
+}
+.annual{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: hsl(231, 11%, 63%);
+    
+}
+.annualactive{
+    color:  hsl(213, 96%, 18%);
+
+    
+}
+.next-step-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.gotoPage3{
+    height: 70%;
+    width: 20%;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+}
+.form-step3{
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+
+.one{
+    
+    height: 10vh;
+    width: 90%;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.details{
+   line-height: 1px;
+   
+}
+
+.next-step-button2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.gotoPage4{
+    height: 5vh;
+    width: 20%;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+}
+.description{
+    color:  hsl(213, 96%, 18%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.amount{
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(243, 100%, 62%);
+}
+
+
+.form-step4{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: none;
+    
+}
+
+.confirmation-box{
+    height: 35%;
+    width: 100%;
+    background-color: hsl(229, 24%, 87%);
+    border-radius: 10px;
+}
+.confirmation-header{
+    height: 40%;
+    width: 85%;
+    border-bottom: 1px solid hsl(231, 11%, 63%);
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.monthly_yearly_change h3, .amount-in-value{
+    color:  hsl(213, 96%, 18%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.monthly_yearly_change a{
+    color: hsl(231, 11%, 63%);
+}
+.render-packages{
+    height: 60%;
+    width: 85%;
+    margin: auto;
+}
+.render-one, .render-two, .render-three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    display: none;
+}
+.total-packages{
+   
+
+    height: 10%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.next-step-button3{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.form-step5{
+    display: grid;
+    place-items: center;
+    margin-top: 20%;
+   display: none;
+}
+.appreciation{
+    text-align: center;
+}
+.gotoPage5{
+      width: 30%;
+        height: 5vh;
+        border-radius: 10px;
+        background-color: hsl(213, 96%, 18%);
+        color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    .main{
+        width: 90%;
+    }
+    .side_nav{
+        width: 30%;
+     }
+     .line{
+         width: 90%;
+     }
+     .round-box{
+         width: 15%;
+         height: 45%;
+     }
+     .gotoPage2{
+         width: 30%;
+     }
+     .form-step1{
+        display: block;
+    }
+    .form-step2{
+      
+        width: 100%;
+        height: 100%;
+        display: none;
+        
+    }
+    .form-step2 h1{
+        /* margin-top: 1.5rem; */
+        word-spacing: 2px;
+        left: 2.5px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2rem;
+        color: hsl(213, 96%, 18%);
+    }
+    .form-step2 p{
+        
+        word-spacing: 2px;
+       
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(231, 11%, 63%);
+    }
+    .step-card{
+        /* border: 1px solid red; */
+        height: 80%;
+        width: 110%;
+    }
+    .card-info p{
+        /* border: 1px solid red; */
+        word-spacing: 1px;
+        font-size: 1rem;
+        line-height: 15px;
+    } 
+    .cards{
+        height: 85%;
+        width: 32%;
+    }
+    .card-wrap{
+        height: 50%;
+        width: 80%;
+    }
+    .card-logo{
+        max-height: 40%;
+        min-height: 35%;
+        min-width: 20%;
+        max-width: 35%;
+
+    }
+    .gotoPage3{
+        height: 70%;
+        width: 30%;
+    }  
+     .form-step3{
+        display: none;
+     }  
+     .one{
+        width: 100%;
+     }
+     .details p{
+        line-height: 15px;
+     }
+     .next-step-button2{
+        width: 100%;
+     }
+     .gotoPage4, .gotoPage5{
+        width: 30%;
+        height: 5vh;
+        border-radius: 10px;
+        background-color: hsl(213, 96%, 18%);
+        color: #fff;
+       
+     }
+
+   
+}
+
+@media (max-width:768px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    .line_contents{
+        display: none;
+    }
+    
+    .main{
+        width: 100%;
+        height: 85%;
+        overflow-x: hidden;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background-color:  hsl(229, 24%, 87%);
+       
+    }
+    .side_nav{
+        margin: 0rem;
+        border-radius: 0.75rem;
+       width: 100%;
+       height: 30%;
+       border: 1px solid green;
+       background-image: url("./multi-step-form-main/assets/images/bg-sidebar-mobile.svg");
+       background-size: cover;
+       font-family: 'Ubuntu', sans-serif;
+       display: flex;
+       position: relative;
+    }
+    .round-box{
+        width: 50px;
+       height: 50px;
+        
+    }
+    form{
+        
+        margin-top: 0rem;
+        width: 85%;
+        background-color: #fff;
+       
+        height: 70%;
+        position: absolute;
+        top: 20%;
+    }
+    .form-step1{
+        margin: auto;
+        display: block;
+        width: 90%;
+       
+    }
+    .button{
+        position: absolute;
+        bottom: -8%;
+        height: 7vh;
+    }
+    .form-step2{
+        display: none;
+        width: 90%;
+        margin: auto;
+       
+    }
+  
+    .cardflex{
+        flex-direction: column;
+     
+    }
+    .card-wrap{
+        height: 80%;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+    
+       
+    }
+   
+    .cards{
+       
+        height: 30%;
+        width: 90%;
+        border: 1px solid  hsl(231, 11%, 63%);
+        border-radius: 10px;
+        display: flex;
+        
+    } 
+    .card-logo{
+        max-height: 50px;
+        min-height: 50px;
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+        max-width: 50px;
+
+    }
+    .card-info{
+       
+        height: 40%;
+        width: 80%;
+        line-height: 5px;
+        
+    }
+    .card-info h4{
+        margin-bottom: 0.5rem;
+        color: hsl(213, 96%, 18%);
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+       
+    }
+    .card-info p{
+        margin-bottom: 0.2rem;
+       
+    }
+       
+   
+  
+   
+   .toggle{
+    width: 90%;
+   }
+ 
+
+   .next-step-button{
+    width: 90%;
+    position: absolute;
+    bottom: -20%;
+   }
+   .gotoPage3{
+    height: 7vh;
+    width: 30%;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+}
+.toggle-action{
+    margin-top: 5%;
+   
+    width: 30%;
+   
+}
+.form-step3{
+    display: none;
+    width: 90%;
+    margin: auto;
+}
+.form-step3 h1{
+    word-spacing: 1px;
+    font-size: 2rem;
+}
+.one{
+   border: 1px solid hsl(231, 11%, 63%);
+   display: flex;
+    align-items: center;
+}
+
+
+
+.details p{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.next-step-button2{
+    position: absolute;
+    bottom: -20%;
+}
+.form-step4{
+    display: none;
+    margin: auto;
+    width: 90%;
+}
+.next-step-button3{
+    position: absolute;
+    bottom: -20%;
+}
+.form-step5{
+    display: grid;
+    display: none;
+}
+
+.hideword{
+    margin-top: 0;
+}
+
+}
+
+
+
+
+       
+       
+     
+     
+       
+    
+      
+        
+     
+       
+       
+.reveal{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
+  .hideword{
+    display: none;
+  }
+  .showword{
+    display: block;
+    color: hsl(213, 96%, 18%);
+    font-family: 'Ubuntu', sans-serif;
+  }

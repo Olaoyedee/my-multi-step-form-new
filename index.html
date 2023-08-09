@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Epilogue:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Lexend+Deca:wght@300;400;500;600;700&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <nav class="side_nav">
+            <img src="" alt="">
+            <div class="line">
+                <div class="active1 round-box active">
+                    <p>1</p>
+                </div>
+                <div class="line_contents">
+                    <p>STEP 1</p>
+                    <h4>YOUR INFO</h4>
+                </div>
+            </div>
+            <div class="line">
+                <div class="active2 round-box">
+                    <P>2</P>
+                </div>
+                <div class="line_contents">
+                    <p>STEP 2</p>
+                    <h4>SELECT PLAN</h4>
+                </div>
+            </div>
+            <div class="line">
+                <div class="active3 round-box">
+                    <P>3</P>
+                </div>
+                <div class="line_contents">
+                    <p>STEP 3</p>
+                    <h4>AD-ONS</h4>
+                </div>
+            </div>
+            <div class="line">
+                <div class="active4 round-box">
+                    <P>4</P>
+                </div>
+                <div class="line_contents">
+                    <p>STEP 4</p>
+                    <h4>SUMMARY</h4>
+                </div>
+            </div>
+        </nav>
+        <div class="personal-info">
+            <form action="" id="form" class="my-form">
+                <div class="form-step1">
+                    <h1>Personal info</h1>
+                    <p> Please provide your name, email address, and phone number.</p>
+                    <label for="name">Name</label>
+                    <br>
+                    <input id="name" placeholder=" e.g. Stephen King" type="text" required>
+                    <br>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input id="email" placeholder=" e.g. stephenking@lorem.com" type="email" required>
+                    <br>
+                    <label for="phone-number">Phone Number</label>
+                    <br>
+                    <input id="phone-number" placeholder="e.g. +1 234 567 890" type="number" required>
+                    <br>
+                    <div class="button">
+                        <button class="gotoPage2" type="submit">NEXT STEP</button>
+                    </div>
+                </div>
+                <div class="form-step2">
+                    <h1>Select your plan</h1>
+                    <p>You have the option of monthly or yearly billing.</p>
+                    <div class="step-card">
+                        <div class="cardflex">
+                            <div class="cards">
+                                <div class="card-wrap ">
+                                    <div class="card-logo" id="logo1"></div>
+                                    <div class="card-info">
+                                        <h4> Arcade</h4>
+                                        <p class="dollarpermonth">$<span class="permonth1">9</span>/mo</p>
+                                        <p class="dollarperyear">$<span class="permonth1">90</span>/yr</p>
+                                        <p class="hideword">2 months free</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cards">
+                                <div class="card-wrap">
+                                    <div class="card-logo" id="logo2"></div>
+                                    <div class="card-info">
+                                        <h4>Advanced</h4>
+                                        <p class="dollarpermonth1">$<span class="permonth2">12</span>/mo</p>
+                                        <p class="dollarperyear1">$<span class="peryear2">120</span>/yr</p>
+                                        <p class="hideword">2 months free</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cards">
+                                <div class="card-wrap">
+                                    <div class="card-logo" id="logo3"></div>
+                                    <div class="card-info">
+                                        <h4>Pro</h4>
+                                        <p class="dollarpermonth2">$<span class="permonth3">15</span>/mo</p>
+                                        <p class="dollarperyear2">$<span class="peryear3">150</span>/yr</p>
+                                        <p class="hideword">2 months free</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="toggle">
+                            <ul class="inner">
+                                <li class="annual annualactive">Monthly</li>
+
+                                <li class="toggle-action">
+                                    <label class="switch">
+                                        <input class="input-check" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                               
+
+
+                                <li class="annual">Yearly</li>
+                            </ul>
+                        </div>
+                        <!-- <label class="switch"> -->
+ 
+                        <br>
+                      
+                        <div class="next-step-button">
+                            <div class="back-arrow">
+                                <p>GO BACK</p>
+                            </div>
+                            <button class="gotoPage3" type="submit">NEXT STEP</button>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-step3">
+                    <h1>Pick add-ons</h1>
+                    <p> Add-ons help enhance your gaming experience.</p>
+                    <div class="one">
+                        <div>
+                            <input type="checkbox" name="" class="Check-inp">
+                        </div>
+
+                        <div class="details">
+
+                            <p class="description">Online service</p>
+                            <p> Access to multiplayer games</p>
+
+
+                        </div>
+                        <div>
+                            <p class="amount"></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div>
+                            <input type="checkbox" name="" class="check-inp">
+                        </div>
+
+                        <div class="details">
+
+                            <p class="description"> Larger storage</p>
+                            <p> Extra 1TB of cloud save</p>
+
+
+                        </div>
+                        <div>
+                            <p class="amount"></p>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div>
+                            <input type="checkbox" name="" class="check-inp">
+                        </div>
+
+                        <div class="details">
+
+                            <p class="description"> Customizable Profile</p>
+                            <p> Custom theme on your profile</p>
+
+
+                        </div>
+                        <div>
+                            <p class="amount"></p>
+                        </div>
+                    </div>
+                    <div class="next-step-button2">
+
+                        <div class="back-arrow2">
+                            <p>GO BACK</p>
+                        </div>
+                        <button class="gotoPage4" type="submit">NEXT STEP</button>
+                    </div>
+
+
+                </div>
+                <div class="form-step4">
+                    <h1>Finishing up</h1>
+                    <p>Double-check everything looks OK before confirming.</p>
+                    <div class="confirmation-box">
+                        <div class="confirmation-header">
+                            <div class="monthly_yearly_change">
+                                <h3><span class="h3span"></span></h3>
+                                <a href="">Change</a>
+                            </div>
+                            <div class="value">
+                                <p class="amount-in-value"></p>
+                            </div>
+                        </div>
+                        <div class="render-packages">
+                            <div class="render-one">
+                                <p class=""></p>
+                                <p>+$<span class="render-one-amount"></span><span class="mo"></span></p>
+                            </div>
+                            <div class="render-two">
+                                <p></p>
+                                <p>+$<span class="render-two-amount"></span><span class="mos"></span></p>
+                            </div>
+                            <div class="render-three">
+                                <p></p>
+                                <p>+$<span class="render-three-amount"></span><span class="mon"></span></p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="total-packages">
+                        <p>Total (per <span class="totalinner"></span>)</p>
+                        <h4 class="final_amount">+$<span class="real-amount"></span><span class="mo"></span></h4>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="next-step-button3">
+
+                        <div class="back-arrow3">
+                            <p>GO BACK</p>
+                        </div>
+                        <button class="gotoPage5" type="submit">Confirm</button>
+                    </div>
+                </div>
+                <div class="form-step5">
+                    <div class="icon-thank-you">
+                        <img src="./images/icon-thank-you.svg" alt="">
+                    </div>
+                    <div class="appreciation">
+                        <h1> Thank you!</h1>
+                        <p> Thanks for confirming your subscription! We hope you have fun
+                            using our platform. If you ever need support, please feel free
+                            to email us at support@loremgaming.com.</p>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+  
+</body>
+
+</html>

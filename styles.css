@@ -697,7 +697,7 @@ input{
     }
     .button{
         position: absolute;
-        bottom: 0%;
+        bottom: -8%;
         height: 7vh;
     }
     .form-step2{

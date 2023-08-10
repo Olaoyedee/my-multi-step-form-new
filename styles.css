@@ -18,7 +18,7 @@ body{
 .main{
     width: 70%;
     height: 80vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     border: 1px solid #fff;
     display: flex;
     justify-content: space-between;

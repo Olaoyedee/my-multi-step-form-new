@@ -50,7 +50,7 @@ function turnPage1(){
   
    const active =document.querySelector('.active')
    const active2 =document.querySelector('.active2')
-
+//    const form = document.querySelector('#form')
  
    
  
@@ -75,12 +75,14 @@ function turnPage1(){
                input.style.borderColor = 'red'
            })
            valid=false
+           
    }
    if(valid){
        formStep1.style.display='none'
        formStep2.style.display='block'
        active.classList.remove('active')
        active2.classList.add('active')
+       gotoPage2.disabled=false
    }
    cards.forEach(x=>{
        
